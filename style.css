@@ -45,7 +45,19 @@ bottom: 15px;
     flex: 1;
     background-color: red;
     width: 100%;
+}
 
+.form-child{
+    margin: 10px;
+}
+.group{
+    display: flex;
+    gap: 10px;
+}
+.group > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .options{
     flex: 1;
