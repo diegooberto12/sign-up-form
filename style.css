@@ -1,5 +1,17 @@
+
 body{
     margin: 0;
+    padding: 0;
+}
+
+
+@font-face { 
+    font-family: 'MyFont'; 
+    src: 
+        url('img/Norse-Bold.otf')  
+        format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
 
 .container{
@@ -16,38 +28,49 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-image: url(img/backgorund.webp);
+    background-size: cover;
 
 
 }
 .logo-child{
 width: 100%;
 height: 10%;
-background-color: black;
+background-color: rgba(0, 0, 0, 0.7);
 flex: 1;
-display: flex;
 position: relative;
-bottom: 15px;
+justify-content: center;
 align-items: center;
-justify-items: center;
 text-align: center;
-color: aqua;
+color: gray;
 font-size:xx-large;
+object-fit: contain;
 }
 
-.logo-child > div{
-    flex: 1;
+.logo-child > span {
+    position: relative;
+    bottom: 13px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 8vh;
+ 
 }
+.img{
+   flex: 1;
+    height: 100%;
+    object-fit: contain;
+}
+
 .info{
     background-color: aqua;
     height: 100vh;
     width: 70%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .quote{
     flex: 1;
-    background-color: orange;
+    background-color: rgb(245, 234, 232);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -64,7 +87,7 @@ font-size:xx-large;
 }
 .form{
     flex: 1;
-    background-color: red;
+    background-color: rgba(248, 217, 217, 0.945);
     width: 100%;
 }
 
@@ -112,9 +135,10 @@ font-size:xx-large;
 }
 .options{
     flex: 1;
-    background-color: blue;
+    background-color: rgb(245, 234, 232);
     width: 100%;
 }
+
 .options-container{
 display: flex;
 flex-direction: column;
@@ -123,6 +147,7 @@ margin-top: 20px;
 position: relative;
 left: 40px;
 }
+
 
 
 /* CSS */
